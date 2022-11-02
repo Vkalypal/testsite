@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 /*------------------------*/
 
 body{
-	background-color: #e8e8e8;
+	background: #e8e8e8 url('../img/bg.png') 50% 130px no-repeat;
 }
 
 .content{
@@ -52,7 +52,6 @@ body{
 .content-top{
 	text-align: center;
 	margin: 0px 0px 65px 0px;
-	
 }
 .content-top__category{
 	opacity: 0.6;
@@ -89,20 +88,29 @@ body{
 	color: #53646b;
 	font-size: 24px;
 	line-height: 40px;
+	margin: 0px 0px 48px 0px;
 }
 
 .content-bottom__text p{
 	margin: 0px 0px 40px 0px;
 }
+.content-bottom__text p:last-child{
+	margin: 0;
+}
 
 .content-bottom-info{}
 .content-bottom-info-list{
-
+	margin: 0px 0px 59px 0px;
 }
 .content-bottom-info-list li{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 20px;
-	margin: 0px 0px 13px 0px;
+	margin: 0px 0px 15px 0px;
+	background: url('../img/icons/li.jpg') left no-repeat;
+	padding: 0px 0px 0px 35px;
+}
+.content-bottom-info-list li:last-child{
+	margin: 0;
 }
 .content-bottom-info-list li:nth-child(1){
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
@@ -123,4 +131,21 @@ body{
 .content-bottom-info-list li:nth-child(4) span{
 	opacity: 0.3;
 }
-.content-bottom-info__link{}
+.content-bottom-info__link{
+	height: 44px;
+	display: inline-block;
+	line-height: 44px;
+	padding: 0px 30px;
+	border-radius: 24px;
+	background-color: #80b7b3;
+	box-shadow: 0 6px 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+}
+.content-bottom-info__link span{
+	padding: 0px 30px 0px 0px;
+	background: url('../img/icons/arr.png') right no-repeat;
+}
